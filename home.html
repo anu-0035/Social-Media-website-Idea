@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timepass</title>
+    <style>
+        .container {
+display:grid;
+background-color: rgb(255, 255, 255);
+grid-template-columns: auto auto auto ;
+height: 700px;
+padding: 100px;
+text-align: center;
+gap: 50px;
+}
+
+    body{
+        background-color:white;
+        
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+
+    }
+#loginid{
+    width: 250px;
+}
+#password{
+    width: 250px;
+}
+#login{
+    margin-left: 90px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(252, 249, 248);
+    padding: 5px;
+    width: 100px;
+    
+}
+#face{
+    margin-left: 38px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(175, 175, 250);
+    padding: 5px;
+    width: 50px;
+}
+#dont{
+    margin-left: 22px;
+    font-size: medium;
+}
+#img{
+    margin-left: 23px;
+}
+.item5{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    
+    padding:35px 46px 35px 120px;
+    
+    
+}
+.get li{
+    display: inline-block;
+    margin: 10px;
+}
+#or{
+    margin-left: 11px;
+}
+#item10{
+    grid-area: 4/1/5/4;
+    text-align: center;
+    height: 100px;
+    
+    
+}
+#item10 li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.form{margin: inline 30px;
+     align-items: center;
+     width: 400px;
+}
+.video{
+    
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"><video width="350px" height="200px" autoplay muted  loop>
+            <source src="VIDEO_e306d358-4f3f-4ac8-98b7-2661cc8c0352.mp4" type="video/mp4">
+           <source src="VIDEO_e306d358-4f3f-4ac8-98b7-2661cc8c0352.mp4"type="video/ogg">
+             
+           </video></div>
+        <div class="item" >
+            <h1 style="font-size:80px;color:rgba(195, 59, 186, 0.59); font-family: Arial, Helvetica, sans-serif  ;">Log In</h1>
+        </div>
+        <div class="item"></div>
+        <div class="item">
+            <video width="300px" height="600px" autoplay muted  loop>
+                <source src="6077872262826952590.mp4" type="video/mp4">
+               <source src="6077872262826952590.mp4"type="video/ogg">
+                 
+               </video>
+        </div>
+        <div class="item5">
+    <form action="backend.php" method="get" class="form">
+        <div class="video" >
+            <video width="150px" height="100px" autoplay muted  loop>
+                <source src="VIDEO_e306d358-4f3f-4ac8-98b7-2661cc8c0352.mp4" type="video/mp4">
+               <source src="VIDEO_e306d358-4f3f-4ac8-98b7-2661cc8c0352.mp4"type="video/ogg">
+                 
+               </video>
+        </div>
+        <br>
+        <br>
+    
+    <div>
+    <input type="text" name="loginid" id="loginid" autocomplete="on" placeholder="username,email or phone number" required></div>
+    <br>
+    <div>
+    <input type="password" name="password" id="password" autocomplete="on" placeholder="password" required></div>
+    <br>
+    <div><a href="login.html"><input type="button" value="LOG IN" onclick="alert('you have log in in your account')" id="login"></a>
+    </div>
+    
+    <p id="or">-----------------or----------------</p>
+    <a href="https://www.facebook.com/" id="face">log in with facebook</a>
+    <p id="dont" style="font-size: 20px;">don't have a account
+        <a href="createacc.html">sign in</a>
+    </p>
+    <div class="get"><p style="font-size:20px;">Get the app.</p>
+        <ul>
+        <li><a href="https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700065205026376_creativeid_535350509651_device_c&gclid=CjwKCAiAhKycBhAQEiwAgf19eur1pUxZ4uxCBou_qr4WYvzrfMU4ukXEgBIkIQBlGHJpm3x3iLQQ1RoCB9gQAvD_BwE&gclsrc=aw.ds"><img src="Screenshot 2022-12-03 183725.png" alt="" width="100px" height="50px"></a></li>
+          <li>  <a href="https://www.apple.com/app-store/"><img src="Screenshot 2022-12-03 183656.png" alt=""width="100px" height="50px"></a></li>
+    </ul>
+    </div>
+    </form>
+</div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item" id="item10">
+    <ul>
+        <a href="about.html"><li>about</li></a>
+        <a href="terms.html"><li>terms </li></a>
+        <a href="help.html"><li>help</li></a>
+        <a href="faq.html"><li>FAQ</li></a>
+        <a href="contact.html"><li>contact us</li></a>
+        <a href="feedback.html"><li>feedback</li></a>
+
+    </ul>
+
+</div>
+</body>
+</html>

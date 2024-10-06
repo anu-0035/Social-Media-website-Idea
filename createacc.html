@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createacc</title>
+    <style>
+    
+    .container {
+display:grid;
+background-color: rgba(249, 243, 243, 0.515);
+grid-template-columns: auto auto auto ;
+height: 700px;
+padding: 100px;
+text-align: center;
+gap: 100px;
+}
+
+    body{
+        background-color: rgba(153, 152, 249, 0.511);
+        background-image: url("Screenshot\ 2022-12-02\ 214321.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+
+    }
+    .item5{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.537);
+    padding: 19px 23px 10px 41px;
+    margin: 58px 47px 0px 55px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item">
+            <h1 style="font-size:45px; color:rgba(55, 55, 206, 0.549);">Create your account</h1>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item5">
+            <form action="backend.php" method="get" class="form">
+                <div>
+                <label for="firstid"> First Name: </label>
+                <input type="text" name="Myname" id="firstid" autocomplete="off">
+                <label for="lastid">Last Name: </label>
+                <input type="text" name="Myname" id="lastid" autocomplete="off"></div>
+                <br>
+                <div>Email Id: <input type="email" name="Myemail" autocomplete="on"></div>
+                <br>
+                <div>Phone No: <input type="number" name="myphone" placeholder="123-456-7890" >
+                </div>
+                <br>
+                <div>
+                <label for="birthdaytime">Birthday :</label>
+                <input type="date" id="birthdaytime" name="birthdaytime"></div>
+                <br>
+                <div>Gender:  Male <input type="radio" name="mygender"> 
+                    Female <input type="radio" name="mygender"> 
+                    Others <input type="radio" name="mygender"></div>
+                <br>
+                <div>
+                    <a href="pass.html"><input type="button" value="Next>"  id="login" ></a>
+                </div>
+                
+                <p id="or">-----------------or----------------</p>
+                <a href="https://accounts.google.com/Login/signinchooser?ifkv=ARgdvAuny0ldOgyqcRREsK_o3NBGb4Y1LSNdz33PoDnY7hsgRXsaLGv9AGt-r1MlbFPnSfJsQQYI&flowName=GlifWebSignIn&flowEntry=ServiceLogin" id="face">sign up with google</a>
+            </form>
+    
+    </div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+

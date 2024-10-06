@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+    <style>
+    
+    .container {
+display:grid;
+background-color: rgba(249, 243, 243, 0.515);
+grid-template-columns: auto auto auto ;
+height: 700px;
+padding: 100px;
+text-align:center ;
+gap: 00px;
+}
+
+    body{
+        background-color: rgba(153, 152, 249, 0.511);
+        background-image: url("Screenshot\ 2022-12-02\ 214321.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+
+    }
+    .item5{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.537);
+    padding: 19px 23px 10px 41px;
+    margin: 58px 47px 0px 55px;
+    
+    }
+
+    </style>
+    <script type="text/javascript">
+        function matchpass(){
+        var firstpassword=document.getElementById("pass1");
+        var secondpassword=document.getElementById("pass2");
+        
+        if(firstpassword==secondpassword){
+        return true;
+        }
+        else{
+        alert("password must be same!");
+        return false;
+        }
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item">
+            <h1 style="font-size:45px; color:rgba(213, 50, 13, 0.847);">Create your password</h1>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item5">
+            <form  name="f1" action="backend.php" method="get" class="form" ></form> >
+                <div>
+                <label for="username">User Name:</label>
+                <div>
+                <input type="text" name="Myname" id="username" autocomplete="on" required></div>
+                <br>
+                <label for="userid">User Id:</label>
+                <div>
+                <input type="text" name="Myname" id="userid" autocomplete="on" required placeholder="anu_0035"></div>
+                <br>
+                <label for="nameid">Password</label>
+                <div>
+                <input type="password" name="pass1" id="pass1" autocomplete="on" required /></div>
+                <br>
+                <label for="nameid">Conform Password:</label>
+                <div>
+                <input type="password" name="pass2" id="pass2" autocomplete="on" required /></div>
+                <br>
+                <div>
+                <a href="home.html"><input type="submit"  onsubmit="return matchpass()" value="Final Submission">
+                </a>
+                </div>
+                <br>
+                </div>
+                    
+            </form>
+        </div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    
+    
+</body>
+</html>
